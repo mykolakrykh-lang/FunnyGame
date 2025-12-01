@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="547734045388044">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="179535063335123" type="Cat">
+                    <param id="0" name="Object">hear</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="536492923008746" type="Audio">
+                    <param id="0" name="Tag">&quot;nam&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="694333276146395" type="Audio">
+                    <param id="0" name="Audio file">mtemtem</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;nam&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="506547025054336" type="hear" />
+            </actions>
+        </event-block>
+        <event-block sid="933392372458883">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="492324933944106" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="837579652306846" type="Audio">
+                    <param id="0" name="Audio file">videoplayback-_1_</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="307069756032830">
+            <conditions>
+                <condition id="17" name="On tap object" sid="456134748724713" type="Touch">
+                    <param id="0" name="Object">r</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="972718777685328" type="Cat">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="657309770295193">
+            <conditions>
+                <condition id="17" name="On tap object" sid="814421738927273" type="Touch">
+                    <param id="0" name="Object">l</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="284411943724798" type="Cat">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="361525079976633">
+            <conditions>
+                <condition id="17" name="On tap object" sid="287921524545099" type="Touch">
+                    <param id="0" name="Object">top</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="123915628867605" type="Cat">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

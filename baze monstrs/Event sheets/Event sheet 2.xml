@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <event-block sid="394233235871752">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="526749999914334" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="194802637275538" type="Audio">
+                    <param id="0" name="Audio file">jenskiy-krik-ujasa-29477</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

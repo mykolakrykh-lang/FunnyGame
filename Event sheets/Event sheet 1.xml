@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="742061173199326">
+            <conditions>
+                <condition id="2" name="Key is down" sid="294651547002655" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="815686964331954" type="Sprite">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="298204300883088">
+            <conditions>
+                <condition id="2" name="Key is down" sid="914787619179893" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="684219911752552" type="Sprite">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="386762153963574">
+            <conditions>
+                <condition id="2" name="Key is down" sid="341474584500652" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="627586311442954" type="Sprite">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="971639865892037">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="474284396557500" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="331678697614945" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="476465807757915">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="962757818575323" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="306200652983786" type="Sprite">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="721124660648817">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="430771069939253" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="402442708376662" type="Sprite">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="945066147287112">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="255231352461062" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="831962860335194" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="505451583585821">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="748413645812115" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="890413111839939" type="Sprite">
+                    <param id="0" name="Animation">&quot;atack&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="486091645897178">
+            <conditions>
+                <condition id="4" name="On finished" sid="560402730952237" type="Sprite">
+                    <param id="0" name="Animation">&quot;atack&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="358228023095557" type="Sprite">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="215931092316712">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="371455021514071" type="Sprite2" />
+                <condition id="-1" name="Compare X" sid="839316612570343" type="Sprite2">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">Sprite.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="961456091600673" type="Sprite2">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="451063791161552" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="441507522033737">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="606798292757411" type="Sprite2" />
+                <condition id="-1" name="Compare X" sid="400886776319621" type="Sprite2">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">Sprite.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="330964605048063" type="Sprite2">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="439785814895220">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="989695381544318" type="Sprite">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="540104854383325" type="Sprite">
+                    <param id="0" name="Animation">&quot;atack&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="203524380090687" type="Sprite2" />
+                <action id="-6" name="Set height" sid="672290888805083" type="TiledBackground3">
+                    <param id="0" name="Height">TiledBackground3.Width+50</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="239988625790464">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="813844048585490" type="Sprite2">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-6" name="Set height" sid="853952775275082" type="TiledBackground3">
+                    <param id="0" name="Height">TiledBackground3.Width-50</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

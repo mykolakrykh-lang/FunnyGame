@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="945879494904059">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="774451138820652" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Turret" id="1" name="Add object to target" sid="911670482926505" type="player">
+                    <param id="0" name="Target">cursor</param>
+                </action>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="721461623125499" type="Sprite">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="404384048150244" type="Sprite7">
+                    <param id="0" name="X">random(3000)</param>
+                    <param id="1" name="Y">random(3000)</param>
+                </action>
+                <action behavior="ShadowCaster" disabled="1" id="1" name="Set height" sid="719474029424102" type="Sprite3">
+                    <param id="0" name="Height">1000</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>control</comment>
+        <event-block sid="458749914475385">
+            <conditions>
+                <condition id="2" name="Key is down" sid="283149090005479" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="476671452438967" type="player">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="748221363492229">
+            <conditions>
+                <condition id="2" name="Key is down" sid="602805808043792" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="702901972591073" type="player">
+                    <param id="0" name="Control">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="307764483737021">
+            <conditions>
+                <condition id="2" name="Key is down" sid="869712519191054" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="362256163609547" type="player">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="108180682470454">
+            <conditions>
+                <condition id="2" name="Key is down" sid="931163190880972" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="593904494750624" type="player">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="912259997715394">
+            <conditions>
+                <condition id="2" name="Key is down" sid="367557037426197" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="654026936517978" type="player">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="755236602454482">
+            <conditions>
+                <condition id="2" name="Key is down" sid="263352466821760" type="Keyboard">
+                    <param id="0" name="Key">83</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="284963079263131" type="player">
+                    <param id="0" name="Control">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="616714393917010">
+            <conditions>
+                <condition id="2" name="Key is down" sid="368560807911164" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="229655260552268" type="player">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="145387157442647">
+            <conditions>
+                <condition id="2" name="Key is down" sid="643313535294801" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="716802902007443" type="player">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="740961236075810">
+            <conditions>
+                <condition id="2" name="Key is down" sid="404206935915479" type="Keyboard">
+                    <param id="0" name="Key">16</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="738552487239438" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+                <condition id="-5" name="Compare width" sid="768436605698759" type="Sprite8">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Width">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="4" name="Set max speed" sid="662332933872993" type="player">
+                    <param id="0" name="Max Speed">225</param>
+                </action>
+                <action id="-5" name="Set width" sid="448864925558197" type="Sprite8">
+                    <param id="0" name="Width">Sprite8.Width-10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="266098950984485">
+            <conditions>
+                <condition id="2" inverted="1" name="Key is down" sid="809907211276408" type="Keyboard">
+                    <param id="0" name="Key">16</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="693743563611780" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+                <condition id="-5" name="Compare width" sid="561064514167796" type="Sprite8">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Width">99</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="4" name="Set max speed" sid="184043505490719" type="player">
+                    <param id="0" name="Max Speed">125</param>
+                </action>
+                <action id="-5" name="Set width" sid="519072203710765" type="Sprite8">
+                    <param id="0" name="Width">Sprite8.Width+1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="321213850473394">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="794991057662452" type="System">
+                    <param id="0" name="Interval (seconds)">0.000001</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="348206465633234" type="cursor">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+                <action id="-3" name="Set position" sid="270641436349772" type="ShadowLight">
+                    <param id="0" name="X">player.X</param>
+                    <param id="1" name="Y">player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="861758530264915">
+            <conditions>
+                <condition id="2" name="Key is down" sid="362909345579930" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="784044814867647" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="381015731139131" type="Audio">
+                    <param id="0" name="Audio file">medlennyiy-otchtlivyiy-korotkiy-zvuk-hodbyi-po-parketu</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="791923557812291">
+            <conditions>
+                <condition id="2" name="Key is down" sid="216218655725220" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="676806749481939" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="934363573772047" type="Audio">
+                    <param id="0" name="Audio file">medlennyiy-otchtlivyiy-korotkiy-zvuk-hodbyi-po-parketu</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="995126022326767">
+            <conditions>
+                <condition id="2" name="Key is down" sid="762519180597512" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="929370973914396" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="214190940449362" type="Audio">
+                    <param id="0" name="Audio file">medlennyiy-otchtlivyiy-korotkiy-zvuk-hodbyi-po-parketu</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="285126054561831">
+            <conditions>
+                <condition id="2" name="Key is down" sid="774808835367674" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="554930547186890" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="347242841122977" type="Audio">
+                    <param id="0" name="Audio file">medlennyiy-otchtlivyiy-korotkiy-zvuk-hodbyi-po-parketu</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="728622642758001">
+            <conditions>
+                <condition id="2" name="Key is down" sid="665193941284088" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="547496402460468" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="962637994562140" type="Audio">
+                    <param id="0" name="Audio file">medlennyiy-otchtlivyiy-korotkiy-zvuk-hodbyi-po-parketu</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="859524053337709">
+            <conditions>
+                <condition id="2" name="Key is down" sid="570448912841893" type="Keyboard">
+                    <param id="0" name="Key">83</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="216925829119247" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="962818309278554" type="Audio">
+                    <param id="0" name="Audio file">medlennyiy-otchtlivyiy-korotkiy-zvuk-hodbyi-po-parketu</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="887335588385816">
+            <conditions>
+                <condition id="2" name="Key is down" sid="882757984610864" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="806239066616781" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="652527734659071" type="Audio">
+                    <param id="0" name="Audio file">medlennyiy-otchtlivyiy-korotkiy-zvuk-hodbyi-po-parketu</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="888388307550540">
+            <conditions>
+                <condition id="2" name="Key is down" sid="906937543288974" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="189774375643003" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="871493943471260" type="Audio">
+                    <param id="0" name="Audio file">medlennyiy-otchtlivyiy-korotkiy-zvuk-hodbyi-po-parketu</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>monstr</comment>
+        <event-block sid="845436161786729">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="866806677297337" type="Sprite7" />
+                <condition id="-3" inverted="1" name="Is on-screen" sid="678986864946799" type="Sprite7" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="495852824141721" type="Sprite7" />
+            </actions>
+        </event-block>
+        <event-block sid="371014926886063">
+            <conditions>
+                <condition behavior="Pathfinding" id="1" name="On failed to find path" sid="698209013279265" type="Sprite7" />
+                <condition id="-3" inverted="1" name="Is on-screen" sid="524258051804882" type="Sprite7" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="303364492197222" type="Sprite7">
+                    <param id="0" name="X">random(3000)</param>
+                    <param id="1" name="Y">random(3000)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="183804614816020">
+            <conditions>
+                <condition behavior="Pathfinding" id="5" name="On arrived" sid="780743450631822" type="Sprite7" />
+                <condition id="-3" inverted="1" name="Is on-screen" sid="505928431586627" type="Sprite7" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="702058186980901" type="Sprite7">
+                    <param id="0" name="X">random(3000)</param>
+                    <param id="1" name="Y">random(3000)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="550621280430583">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="323936535850082" type="Sprite7" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="192805671474760" type="Sprite7">
+                    <param id="0" name="X">player.X</param>
+                    <param id="1" name="Y">player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="546914364513094">
+            <conditions>
+                <condition behavior="Pathfinding" id="1" name="On failed to find path" sid="368360314904814" type="Sprite7" />
+                <condition id="-3" name="Is on-screen" sid="140522285477662" type="Sprite7" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="0" name="Find path" sid="231832515759483" type="Sprite7">
+                    <param id="0" name="X">player.X</param>
+                    <param id="1" name="Y">player.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="869033807489010">
+            <conditions>
+                <condition behavior="Pathfinding" id="0" name="On path found" sid="916192509590648" type="Sprite7" />
+                <condition id="-3" name="Is on-screen" sid="931582748755629" type="Sprite7" />
+            </conditions>
+            <actions>
+                <action behavior="Pathfinding" id="1" name="Move along path" sid="951198163253993" type="Sprite7" />
+            </actions>
+        </event-block>
+        <event-block sid="597045579854639">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="381905733242238" type="Sprite7" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="535932234871864" type="Sprite7">
+                    <param id="0" name="Instance variable">run</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="923114058110828">
+            <conditions>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="540396440803257" type="Sprite7" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="361105440406201" type="Sprite7">
+                    <param id="0" name="Instance variable">run</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="951166322605972">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="635053298695232" type="Sprite7">
+                    <param id="0" name="Instance variable">run</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="5" inverted="1" name="Is tag playing" sid="578509343576492" type="Audio">
+                    <param id="0" name="Tag">&quot;a&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="133401848073925" type="Audio">
+                    <param id="0" name="Audio file">beg-monstra-v-peschere-37079</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;a&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>exit</comment>
+        <event-block sid="927241782286810">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="525676468904303" type="player">
+                    <param id="0" name="Object">Sprite12</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="537345113062890" type="player">
+                    <param id="0" name="Instance variable">key</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="528494076902204" type="Sprite12" />
+            </actions>
+        </event-block>
+        <event-block sid="847507962248123">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="216107737438336" type="player">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="227833030515403" type="player">
+                    <param id="0" name="Instance variable">key</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="842684338417985" type="System">
+                    <param id="0" name="Layout">Layout 3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="196335455844345">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="238045256692610" type="Sprite7">
+                    <param id="0" name="Object">player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="279045336859295" type="System">
+                    <param id="0" name="Layout">Layout 2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
